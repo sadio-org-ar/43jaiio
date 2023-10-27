@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<a href="../index.html" ><img src="../images/garland_logo.png" width="645" height="71" alt="" title="" /></a>
+<link rel="stylesheet" href="../resources/flyout.css" type="text/css" />
+<script type="text/javascript" src="../resources/flyout.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>43 JAIIO - Simposio Argentino de Informática en el Estado</title>
+	<script language="JavaScript" src="settings.js"></script>
+	<script language="JavaScript" src="search.js"></script>
+	<!-- You can change the fonts, text colors, and styles of your search results with the CSS below -->
+	<style type="text/css">
+		.highlight { background: #FFFF40; }
+		.searchheading { font-size: 130%; font-weight: bold; }
+		.summary { font-size: 80%; font-style: italic; }
+		.suggestion { font-size: 100%; }
+		.results { font-size: 100%; }
+		.category { color: #999999; }
+		.sorting { text-align: right; }
+
+		.result_title { font-size: 100%; }		
+		.description { font-size: 100%; color: #008000; }
+		.context { font-size: 100%; }
+		.infoline { font-size: 80%; font-style: normal; color: #808080;}
+
+		.zoom_searchform { font-size: 100%; }
+		.zoom_results_per_page { font-size: 80%; margin-left: 10px; }
+		.zoom_match { font-size: 80%; margin-left: 10px;}				
+		.zoom_categories { font-size: 80%; }
+		.zoom_categories ul { display: inline; margin: 0px; padding: 0px;}
+		.zoom_categories li { display: inline; margin-left: 15px; list-style-type: none; }
+		
+		.cat_summary ul { margin: 0px; padding: 0px; display: inline; }
+		.cat_summary li { display: inline; margin-left: 15px; list-style-type: none; }
+
+		input.zoom_button {  }
+		input.zoom_searchbox {  }		
+		
+		.result_image { float: left; display: block; }
+		.result_image img { margin: 10px; width: 80px; border: 0px; }
+
+		.result_block { margin-top: 15px; margin-bottom: 15px; clear: left; }
+		.result_altblock { margin-top: 15px; margin-bottom: 15px; clear: left; }
+		
+		.result_pages { font-size: 100%; }
+		.result_pagescount { font-size: 100%; }
+		
+		.searchtime { font-size: 80%; }
+		
+		.recommended 
+		{ 
+			background: #DFFFBF; 
+			border-top: 1px dotted #808080; 
+			border-bottom: 1px dotted #808080; 
+			margin-top: 15px; 
+			margin-bottom: 15px; 
+		}
+		.recommended_heading { float: right; font-weight: bold; }
+		.recommend_block { margin-top: 15px; margin-bottom: 15px; clear: left; }		
+		.recommend_title { font-size: 100%; }
+		.recommend_description { font-size: 100%; color: #008000; }
+		.recommend_infoline { font-size: 80%; font-style: normal; color: #808080;}
+		.recommend_image { float: left; display: block; }
+		.recommend_image img { margin: 10px; width: 80px; border: 0px; }
+	</style>		    
+</head>
+
+<body onload="if (document.getElementById('zoom_searchbox')) {document.getElementById('zoom_searchbox').focus();}">
+<div id="wrapper">
+<div id="leftcolumn">
+<dl class="dropdown">
+    <dt id="one-ddheader" class="upperdd" onmouseover="ddMenu('one',1)" onmouseout="ddMenu('one',-1)">Inicio</dt>
+    <dd id="one-ddcontent" onmouseover="cancelHide('one')" onmouseout="ddMenu('one',-1)">
+      <ul>
+        <li><a href="../JAIIO/organizadores.html" class="underline">Organizadores</a></li>
+        <li><a href="../JAIIO/sponsors.html" class="underline">Sponsors</a></li>
+        <li><a href="../JAIIO/auspicios.html">Auspicios</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="asai-ddheader" class="upperdd" onmouseover="ddMenu('asai',1)" onmouseout="ddMenu('asai',-1)">ASAI</dt>
+    <dd id="asai-ddcontent" onmouseover="cancelHide('asai')" onmouseout="ddMenu('asai',-1)">
+      <ul>
+        <li><a href="../ASAI/asai.html" class="underline">Presentación</a></li>
+        <li><a href="../ASAI/search.html" class="underline">Contribuciones</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="asse-ddheader" class="upperdd" onmouseover="ddMenu('asse',1)" onmouseout="ddMenu('asse',-1)">ASSE</dt>
+    <dd id="asse-ddcontent" onmouseover="cancelHide('asse')" onmouseout="ddMenu('asse',-1)">
+      <ul>
+        <li><a href="../ASSE/asse.html" class="underline">Presentación</a></li>
+        <li><a href="../ASSE/search.html" class="underline">Contribuciones</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="ast-ddheader" class="upperdd" onmouseover="ddMenu('ast',1)" onmouseout="ddMenu('ast',-1)">AST</dt>
+    <dd id="ast-ddcontent" onmouseover="cancelHide('ast')" onmouseout="ddMenu('ast',-1)">
+      <ul>
+        <li><a href="../AST/ast.html" class="underline">Presentación</a></li>
+        <li><a href="../AST/search.html" class="underline">Contribuciones</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="cai-ddheader" class="upperdd" onmouseover="ddMenu('cai',1)" onmouseout="ddMenu('cai',-1)">CAI</dt>
+    <dd id="cai-ddcontent" onmouseover="cancelHide('cai')" onmouseout="ddMenu('cai',-1)">
+      <ul>
+        <li><a href="../CAI/cai.html" class="underline">Presentación</a></li>
+        <li><a href="../CAI/search.html" class="underline">Contribuciones</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="jui-ddheader" class="upperdd" onmouseover="ddMenu('jui',1)" onmouseout="ddMenu('jui',-1)">JUI</dt>
+    <dd id="jui-ddcontent" onmouseover="cancelHide('jui')" onmouseout="ddMenu('jui',-1)">
+      <ul>
+        <li><a href="../JUI/jui.html" class="underline">Presentación</a></li>
+        <li><a href="../JUI/search.html" class="underline">Contribuciones</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="sid-ddheader" class="upperdd" onmouseover="ddMenu('sid',1)" onmouseout="ddMenu('sid',-1)">SID</dt>
+    <dd id="sid-ddcontent" onmouseover="cancelHide('sid')" onmouseout="ddMenu('sid',-1)">
+      <ul>
+        <li><a href="../SID/sid.html" class="underline">Presentación</a></li>
+        <li><a href="../SID/search.html" class="underline">Contribuciones</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="sie-ddheader" class="upperdd" onmouseover="ddMenu('sie',1)" onmouseout="ddMenu('sie',-1)">SIE</dt>
+    <dd id="sie-ddcontent" onmouseover="cancelHide('sie')" onmouseout="ddMenu('sie',-1)">
+      <ul>
+        <li><a href="sie.html" class="underline">Presentación</a></li>
+        <li><a href="search.html" class="underline">Contribuciones</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="sii-ddheader" class="upperdd" onmouseover="ddMenu('sii',1)" onmouseout="ddMenu('sii',-1)">SII</dt>
+    <dd id="sii-ddcontent" onmouseover="cancelHide('sii')" onmouseout="ddMenu('sii',-1)">
+      <ul>
+        <li><a href="../SII/sii.html" class="underline">Presentación</a></li>
+        <li><a href="../SII/search.html" class="underline">Contribuciones</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="sio-ddheader" class="upperdd" onmouseover="ddMenu('sio',1)" onmouseout="ddMenu('sio',-1)">SIO</dt>
+    <dd id="sio-ddcontent" onmouseover="cancelHide('sio')" onmouseout="ddMenu('sio',-1)">
+      <ul>
+        <li><a href="../SIO/sio.html" class="underline">Presentación</a></li>
+        <li><a href="../SIO/search.html" class="underline">Contribuciones</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="sts-ddheader" class="upperdd" onmouseover="ddMenu('sts',1)" onmouseout="ddMenu('sts',-1)">STS</dt>
+    <dd id="sts-ddcontent" onmouseover="cancelHide('sts')" onmouseout="ddMenu('sts',-1)">
+      <ul>
+        <li><a href="../STS/sts.html" class="underline">Presentación</a></li>
+        <li><a href="../STS/search.html" class="underline">Contribuciones</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="wsegi-ddheader" class="upperdd" onmouseover="ddMenu('wsegi',1)" onmouseout="ddMenu('wsegi',-1)">WSegI</dt>
+    <dd id="wsegi-ddcontent" onmouseover="cancelHide('wsegi')" onmouseout="ddMenu('wsegi',-1)">
+      <ul>
+        <li><a href="../WSegI/wsegi.html" class="underline">Presentación</a></li>
+        <li><a href="../WSegI/search.html">Contribuciones</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="est-ddheader" class="upperdd" onmouseover="ddMenu('est',1)" onmouseout="ddMenu('est',-1)">EST</dt>
+    <dd id="est-ddcontent" onmouseover="cancelHide('est')" onmouseout="ddMenu('est',-1)">
+      <ul>
+        <li><a href="../EST/est.html" class="underline">Presentación</a></li>
+        <li><a href="../EST/search.html" class="underline">Contribuciones</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="ijcai-ddheader" onmouseover="ddMenu('ijcai',1)" onmouseout="ddMenu('ijcai',-1)">DC – IJCAI SCHOOL</dt>
+    <dd id="ijcai-ddcontent" onmouseover="cancelHide('ijcai')" onmouseout="ddMenu('ijcai',-1)">
+      <ul>
+        <li><a href="../IJCAI/ijcai.html" class="underline">Presentación</a></li>
+        <li><a href="../IJCAI/search.html" class="underline">Contribuciones</a></li>
+      </ul>
+    </dd>
+  </dl>
+</div>
+<div id="rightcolumn">
+<span style="text-align: center;">	<h2>Anales del 8º Simposio Argentino de Informática en el Estado</h2></span>
+<p style="text-align: center;">ISSN: 1851-2526</p>
+	<br/>
+	<p>
+	Ingrese una o más palabras clave para buscar en título, autores y contenido.<br />
+	Los caracteres '*' y '?' están permitidos.
+	</p>
+	<br/>
+	<!-- This is where the search form and results will appear -->
+	<script language="JavaScript">ZoomSearch();</script>
+	<noscript>Debe estar activo JavaScript para usar el motor de búsqueda.</noscript>
+<br/>
+<hr/>
+<br/>
+
+
+<div style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="100%" border="1" cellpadding="2" cellspacing="2" style="background-color: #ffffff;" rules="all">
+<tr valign="top">
+<td width="20%" style="border-width : 0px; background-color: #c0c0c0;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: bold; color: #000000; background-color: transparent; text-decoration: none;">Autor/es</span></p>
+</td>
+<td style="border-width : 0px; background-color: #c0c0c0;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: bold; color: #000000; background-color: transparent; text-decoration: none;">Título</span></p>
+</td>
+<td style="border-width : 0px; background-color: #c0c0c0;"><p style=" text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><span style=" font-size: 10pt; font-family: 'Arial', 'Helvetica', sans-serif; font-style: normal; font-weight: bold; color: #000000; background-color: transparent; text-decoration: none;">Documento</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Giardini, P., Aguzzi, V.<br />
+</td>
+<td style="border-width : 1px;">Sistema de Actas Móviles Digitales de la Municipalidad de Rosario<br />
+</td>
+<td style="border-width : 1px;">(1-9)<br/><a href="1-SIE620.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Kruse, F.<br />
+</td>
+<td style="border-width : 1px;">Gestión de Reclamos<br />
+</td>
+<td style="border-width : 1px;">(10-24)<br/><a href="2-SIE761.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Rossello, R., Borgonovo, R.<br />
+</td>
+<td style="border-width : 1px;">Centro de Atención al Vecino – CAV - MGP<br />
+</td>
+<td style="border-width : 1px;">(25-37)<br/><a href="3-SIE643.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Rumitti C., Finochietto, F., Villalba, E., Champredonde, R.<br />
+</td>
+<td style="border-width : 1px;">Apoderamiento y Representación Web en ARBA<br />
+</td>
+<td style="border-width : 1px;">(38-48)<br/><a href="4-SIE655.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Diván, M., Sánchez Reynoso, M., Fredes, M., Oddone, A., Cavallo, B., Martínez, A.<br />
+</td>
+<td style="border-width : 1px;">Hacia una Arquitectura Orientada a Servicios en el Instituto Provincial Autárquico de Vivienda de La Pampa<br />
+</td>
+<td style="border-width : 1px;">(49-60)<br/><a href="5-SIE622.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Pasquale, A., Milanesi, N., Charlar, A., Lisse, A., Gonzalez Casco, P., Antonelli, L.<br />
+</td>
+<td style="border-width : 1px;">Juicio Digital en el Marco del Gobierno Electrónico y su Impacto en los procesos y la Ecología<br />
+</td>
+<td style="border-width : 1px;">(61-70)<br/><a href="6-SIE713.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Palestrini, A., Carrozzo, D.<br />
+</td>
+<td style="border-width : 1px;">ELearning Packager Manager (EPM). Kernel gestionador de recursos para múltiples fines. El escritorio semántico provincial como asistente digital para potenciar la enseñanza e impactar en el rendimiento de los estudiantes con relación al uso, procesamiento, sistematización, gestión y producción de la información<br />
+</td>
+<td style="border-width : 1px;">(71-80)<br/><a href="7-SIE968.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Gamón, M., Soria Ojeda, C., Gramajo, S., Marenco, C.<br />
+</td>
+<td style="border-width : 1px;">Gobierno Electrónico y Transformación Organizacional en el IPAP CHACO<br />
+</td>
+<td style="border-width : 1px;">(81-95)<br/><a href="8-SIE745.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Escobar, L., Ciancio, G., Soliz, A., Beamurguía, J., Carlino, O., Relli, M.<br />
+</td>
+<td style="border-width : 1px;">Sistema Integral de Prótesis del IOMA<br />
+</td>
+<td style="border-width : 1px;">(96-105)<br/><a href="9-SIE958.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Albornoz, G., Báscolo, A., Carriles, L., Dorna, D., Marsiglia, S.<br />
+</td>
+<td style="border-width : 1px;">Fortalecimiento de capacidades técnicas y operativas de la Subsecretaría de Empleo a partir de la incorporación de nuevas tecnologías de gestión<br />
+</td>
+<td style="border-width : 1px;">(106-113)<br/><a href="10-SIE799.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Días, J., Vittorello, M., Pozo, L., La Cava, G.<br />
+</td>
+<td style="border-width : 1px;">Sistema de Información Geográfico (SIG) del Programa Remediar – Ministerio de Salud de la Nación<br />
+</td>
+<td style="border-width : 1px;">(114-125)<br/><a href="11-SIE789.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Rodríguez, E., Sierras, R.<br />
+</td>
+<td style="border-width : 1px;">Firma digital y despapelización, experiencia exitosa entre ANMAT y su industria regulada<br />
+</td>
+<td style="border-width : 1px;">(126-139)<br/><a href="12-SIE614.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Décima, M., Piarrou, M.<br />
+</td>
+<td style="border-width : 1px;">Casillero Aeronáutico Digital<br />
+</td>
+<td style="border-width : 1px;">(140-156)<br/><a href="13-SIE684.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Fernández M., Vilota J., Godoy, M., Mariño, S.<br />
+</td>
+<td style="border-width : 1px;">Sistema integral de gestión de Planta Orgánica Funcional para el control de RRHH de establecimientos educativos de una Provincia del NEA<br />
+</td>
+<td style="border-width : 1px;">(157-172)<br/><a href="14-SIE845.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Sartorio, A., Rodríguez, G., Tedini, D., Vaquero, M., Peralba, D.<br />
+</td>
+<td style="border-width : 1px;">Wheelwright comuna físico-virtual: desarrollo integral de una ingeniería de servicios<br />
+</td>
+<td style="border-width : 1px;">(173-188)<br/><a href="15-SIE738.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Uzal, R., Riesco, D., Montejano, G., Baieli, C., Agüero, W.<br />
+</td>
+<td style="border-width : 1px;">Conflictos en el Ciber Espacio entre estados naciones: Potenciales aportes para la eventual actuación de las Naciones Unidas y de la Unión Internacional de las Telecomunicaciones<br />
+</td>
+<td style="border-width : 1px;">(189-197)<br/><a href="16-SIE704.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Pando, D., Rojas Martín, F., Barrero, D.<br />
+</td>
+<td style="border-width : 1px;">El uso de las redes sociales profesionales como plataformas de colaboración entre empleados en las administraciones públicas. El caso NovaGob<br />
+</td>
+<td style="border-width : 1px;">(198-212)<br/><a href="17-SIE609.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Rouget, S.<br />
+</td>
+<td style="border-width : 1px;">Programa de Reingeniería de la Seguridad Social Argentina "PRISSA"<br />
+</td>
+<td style="border-width : 1px;">(213-217)<br/><a href="18-SIE977.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Chedrese, V., Parra, J., Martinez Garro, J., Pelitti, M., Lorenzon, E., Bazan, P., Alvarez, M.<br />
+</td>
+<td style="border-width : 1px;">Sistema basado en BPM para el seguimiento del proceso licitatorio y la ejecución de proyectos del programa PMGM-UEC-Ministerio del Interior y Transporte de la Nación Argentina<br />
+</td>
+<td style="border-width : 1px;">(218-232)<br/><a href="19-SIE574.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 1px;">Belli, G., Ambrosi, V., Venosa, P., Vega, E.<br />
+</td>
+<td style="border-width : 1px;">Higienización de los datos. Preservando la privacidad de la información almacenada en equipos descartados<br />
+</td>
+<td style="border-width : 1px;">(233-247)<br/><a href="21-SIE775.pdf" target="_blank">[PDF]</a><br />
+</td>
+</tr>
+</table>
+<br/><br/>
+</div>
+</div>
+</body>
+</html>
